@@ -2,7 +2,7 @@ This repository contains data, code and a video presentation for my individual p
 ### Data Collection
 PDFs containing amicus briefs and Supreme Court opinions were manually downloaded from Proquest's Supreme Court Ruling database. 
 ### Preprocessing
-pdfplumber was used to extract text from the above pdfs. See [file_conversion.ipynb)](file_conversion.ipynb) for the code used to accomplish this. Then regular expressions and other functions were used to clean the text. See [preprocessing.ipynb](preprocessing.ipynb) for the code used to accomplish this, and the cleaned text csv files in the [files folder](files/cleaned_text.csv). 
+pdfplumber was used to extract text from the above pdfs. See [file_conversion.ipynb](file_conversion.ipynb) for the code used to accomplish this. Then regular expressions and other functions were used to clean the text. See [preprocessing.ipynb](preprocessing.ipynb) for the code used to accomplish this, and the cleaned text csv files in the [files folder](files/cleaned_text.csv). 
 ### Exploratory Data Analysis
 Word2Vec was used to vectorize the cleaned text for each corpus, and then explored to determine the dimensions and spread of the vectors in each embedding. See [EDA.ipynb](EDA.ipynb) for the code, and the 'models' folder to access the trained models.
 ### Principal Component Analysis and K-means Clustering
